@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+</head>
+<body>
+  <h1>Bookshelf Apps</h1>
+
+  <section class="search_section">
+    <h2>Cari Buku
+      <i class="ri-search-line"></i>
+    </h2>
+    <form id="searchBook">
+      <label for="searchBookTitle">Judul</label>
+      <input id="searchBookTitle" type="text">
+      <button id="searchSubmit" type="submit">Cari</button>
+    </form>
+  </section>
+
+  <div class="bookshelf">
+    <h2>Belum Selesai Dibaca
+      <i class="ri-timer-fill"></i>
+    </h2>
+    <ul id="unfinished-books">
+    </ul>
+  </div>
+  
+  <div class="bookshelf">
+    <h2>Selesai Dibaca
+      <i class="ri-check-double-line"></i>
+    </h2>
+    <ul id="finished-books">
+    </ul>
+  </div>
+  
+  <div class="add-book-form">
+    <h2>Tambahkan Buku
+      <i class="ri-add-line"></i>
+    </h2>
+    <input type="text" id="title" placeholder="Judul">
+    <input type="text" id="author" placeholder="Penulis">
+    <input type="number" id="year" placeholder="Tahun">
+    <label for="isComplete">Selesai Dibaca:</label>
+    <input type="checkbox" id="isComplete">
+    <button id="add-book">Tambah Buku</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>
